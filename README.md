@@ -1,21 +1,27 @@
-# Webinar-09-Angular-Front-End-Session-2
+# MyBlogSite
 
-Scenario 1: Using a sperate router module - Import the RouterModule in app-routing module (app-routing module is already created) and use it in the app module.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.1.
 
- 
+## Development server
 
-Scenario 2: Fix the broken delete functionality - If you have noticed our delete functionality is broken after we implemented the http service
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-   Hint - you may remove the @Output decorator that we used to pass the data to the parent component and try to remove the blog object directly from our service variable.
+## Code scaffolding
 
- 
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-Scenario 3: Fix the bug in view blog component - If you try to reload the view-blog page, you lose the data, this occurs after the implementation of http service since you are not invoking the http method from view-blog component. You need to fix this
+## Build
 
-                  Hint - you may get rid of the current Blog variable and try implement a getter method instead. Also you might need to use the elvis operator available in JavaScript to stop breaking your template until the data is received.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
- 
+## Running unit tests
 
-Scenario 4: Edit functionality for a blog - As we have a component to view a single blog post, you need to implement a functionality to edit an existing blog post.
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-                Hint - you may add an edit button on top of a blog post and redirect to create-blog component and implement the edit functionality using the same form.
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
